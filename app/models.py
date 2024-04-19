@@ -27,7 +27,9 @@ class Model(db.Model):
 
 class Funcionario(Model):
     __tablename__ = 'funcionarios'
+    # PK
     id = db.Column(db.Integer, autoincrement=True, primary_key=True)
+    # FK
     departamento_id = db.Column(db.Integer, db.ForeignKey('departamentos.id'))
     
     nome = db.Column(db.String(255), nullable=False)
@@ -38,12 +40,13 @@ class Funcionario(Model):
     
 class Departamento(Model):
     __tablename__ = 'departamentos'
+    # PK
     id = db.Column(db.Integer, autoincrement=True, primary_key=True)
 
-    funcionarios = db.relationship('Funcionario', backref='departamento')
-    projetos = db.relationship('Projeto', backref='departamento')
-
     nome = db.Column(db.String(255), unique=True, nullable=False)
+
+    # Relacionamento
+    funcionarios = db.relationship('Funcionario', backref='departamento')
 
     def __init__(self, **kwargs):
         super(Departamento, self).__init__(**kwargs)
