@@ -39,6 +39,7 @@ def obter_funcionario(id):
     try:
         funcionario = Funcionario.get(id)
         return jsonify({
+            'mensagem': 'Operação realizada com sucesso',
             'id': funcionario.id,
             'nome': funcionario.nome,
             'email': funcionario.email,
