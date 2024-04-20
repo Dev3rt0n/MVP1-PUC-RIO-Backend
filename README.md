@@ -3,10 +3,8 @@
 ## Sobre o Projeto
 **CorpTeams** é uma plataforma inovadora que permite **organizar times** dentro de uma organização, facilitando a gestão de projetos e a colaboração entre equipes. Com uma interface intuitiva e recursos poderosos, o CorpTeams é a solução ideal para empresas que buscam otimizar seus processos internos.
 
-## Funcionalidades
+## Funcionalidade
 - **Gerenciamento de Equipes**: Crie e gerencie equipes com facilidade.
-- **Atribuição de Tarefas**: Distribua tarefas e acompanhe o progresso.
-- **Comunicação Integrada**: Mantenha sua equipe alinhada com ferramentas de comunicação.
 
 ## Começando
 
