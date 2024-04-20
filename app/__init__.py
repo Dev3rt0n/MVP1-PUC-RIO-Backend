@@ -18,7 +18,7 @@ swagger_blueprint = get_swaggerui_blueprint(
     app.config['SWAGGER_URL'],
     app.config['API_URL'],
     config={
-        'app_name': "Sample API"
+        'app_name': "CorpTeams API"
     }
 )
 app.register_blueprint(
